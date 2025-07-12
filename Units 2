@@ -1,0 +1,39 @@
+#include <iostream.h>
+int main() {
+    int units;
+    float bill = 0.0, surcharge = 0.0, totalBill = 0.0;
+
+    cout << "Enter the number of units consumed: ";
+    cin >> units;
+
+    if (units <= 100) {
+        bill = units * 0.60;
+    }
+    else if (units <= 300) {
+        bill = (100 * 0.60) + ((units - 100) * 0.80);
+    }
+    else {
+        bill = (100 * 0.60) + (200 * 0.80) + ((units - 300) * 0.90);
+    }
+
+    if (bill > 300) {
+        surcharge = bill * 0.15;
+    }
+
+
+    totalBill = bill + surcharge;
+
+    
+    if (totalBill < 50) {
+        totalBill = 50;
+    }
+
+    cout << "Electricity Bill Summary:\n";
+    cout << "Base Bill: ₹" << bill << endl;
+    if (surcharge > 0) {
+        cout << "Surcharge (15%): ₹" << surcharge << endl;
+    }
+    cout << "Total Bill: ₹" << totalBill << endl;
+
+    return 0;
+}
