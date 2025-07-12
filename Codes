@@ -1,0 +1,22 @@
+#include <iostream.h>
+
+int main() {
+    int a, b;
+
+    // Input two numbers
+    cout << "Enter first number (a): ";
+    cin >> a;
+    cout << "Enter second number (b): ";
+    cin >> b;
+
+    cout << "\nBefore swapping: a = " << a << ", b = " << b << endl;
+
+    // Swapping without using third variable
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    cout << "After swapping: a = " << a << ", b = " << b << endl;
+
+    return 0;
+}
