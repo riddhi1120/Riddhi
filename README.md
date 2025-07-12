@@ -1,4 +1,7 @@
-Write a c++ program to perform all the arithmetic operations .Input the numbers from the users.
+
+
+
+
 #include <iostream.h>
 voide main(){ 
            int num1,num2;
