@@ -1,0 +1,18 @@
+#include <iostream.h>
+void main() {
+    int n;
+
+    cout << "Enter an integer: ";
+    cin >> n;
+
+    if (n <= 0) {
+        cout << "Please enter a positive number." << endl;
+    } else {
+      
+        for (int i = 1; i <= n; i++) {
+            cout << "Well Done" << endl;
+        }
+    }
+
+    return 0;
+}
